@@ -43,7 +43,7 @@ class Settings(BaseSettings):
     tesseract_cmd: str = ""
     ocr_language: str = "eng"
 
-    llm_provider: Literal["openai", "gemini", "anthropic"] = "openai"
+    llm_provider: Literal["openai", "gemini", "anthropic"] = "gemini"
     llm_timeout_seconds: int = 60
     llm_max_retries: int = 2
 
@@ -51,7 +51,7 @@ class Settings(BaseSettings):
     openai_model: str = "gpt-4o-mini"
 
     gemini_api_key: str = ""
-    gemini_model: str = "gemini-2.0-flash"
+    gemini_model: str = "gemini-3.5-flash-lite"
 
     anthropic_api_key: str = ""
     anthropic_model: str = "claude-3-5-haiku-latest"

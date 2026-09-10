@@ -1,0 +1,238 @@
+{
+  "header": {
+    "company_name": {
+      "value": "HDFC Bank Limited",
+      "confidence": 0.9,
+      "evidence": {
+        "source_text": "HDFCBankLimitedAnnual Report2016-17",
+        "page_number": 1
+      },
+      "page_number": 1,
+      "source_text": "HDFCBankLimitedAnnual Report2016-17"
+    },
+    "statement_title": {
+      "value": "Consolidated Balance Sheet",
+      "confidence": 0.95,
+      "evidence": {
+        "source_text": "ConsolidatedBalanceSheet",
+        "page_number": 1
+      },
+      "page_number": 1,
+      "source_text": "ConsolidatedBalanceSheet"
+    },
+    "currency": {
+      "value": null,
+      "confidence": null,
+      "evidence": null,
+      "page_number": null,
+      "source_text": null
+    },
+    "unit_multiplier": {
+      "value": "000",
+      "confidence": 0.95,
+      "evidence": {
+        "source_text": "in\u2018000",
+        "page_number": 1
+      },
+      "page_number": 1,
+      "source_text": "in\u2018000"
+    },
+    "reporting_period": {
+      "value": "31-Mar-17",
+      "confidence": 0.95,
+      "evidence": {
+        "source_text": "As at March 31, 2017",
+        "page_number": 1
+      },
+      "page_number": 1,
+      "source_text": "As at March 31, 2017"
+    },
+    "comparative_period": {
+      "value": "31-Mar-16",
+      "confidence": 0.95,
+      "evidence": {
+        "source_text": "31-Mar-16",
+        "page_number": 1
+      },
+      "page_number": 1,
+      "source_text": "31-Mar-16"
+    }
+  },
+  "current_period": {
+    "period": "31-Mar-17",
+    "capital": 5125091.0,
+    "reserves_and_surplus": 912814397.0,
+    "minority_interest": 2914389.0,
+    "deposits": 6431342479.0,
+    "borrowings": 984156439.0,
+    "other_liabilities_provisions": 587088812.0,
+    "total_capital_and_liabilities": 8923441607.0,
+    "cash_and_balances_with_central_bank": 379105485.0,
+    "balances_with_banks_money_at_call": 114005711.0,
+    "investments": 2107771120.0,
+    "advances_or_loans": 5854809871.0,
+    "fixed_assets": 38146997.0,
+    "other_assets": 429602423.0,
+    "total_assets": 8923441607.0
+  },
+  "comparative_period": {
+    "period": "31-Mar-16",
+    "capital": 5056373.0,
+    "reserves_and_surplus": 737984869.0,
+    "minority_interest": 1806228.0,
+    "deposits": 5458732889.0,
+    "borrowings": 1037139597.0,
+    "other_liabilities_provisions": 381403308.0,
+    "total_capital_and_liabilities": 7622123264.0,
+    "cash_and_balances_with_central_bank": 300765846.0,
+    "balances_with_banks_money_at_call": 89922969.0,
+    "investments": 1936338475.0,
+    "advances_or_loans": 4872904174.0,
+    "fixed_assets": 34796976.0,
+    "other_assets": 387394824.0,
+    "total_assets": 7622123264.0
+  },
+  "line_items": [
+    {
+      "line_item_name": "Capital",
+      "schedule_number": "1",
+      "current_value": 5125091.0,
+      "comparative_value": 5056373.0,
+      "evidence": {
+        "source_text": "Capital 1 5,125,091 5,056,373",
+        "page_number": 1
+      }
+    },
+    {
+      "line_item_name": "Reserves and surplus",
+      "schedule_number": "2",
+      "current_value": 912814397.0,
+      "comparative_value": 737984869.0,
+      "evidence": {
+        "source_text": "Reserves and surplus 2 912,814,397 737,984,869",
+        "page_number": 1
+      }
+    },
+    {
+      "line_item_name": "Minority interest",
+      "schedule_number": "2A",
+      "current_value": 2914389.0,
+      "comparative_value": 1806228.0,
+      "evidence": {
+        "source_text": "Minority interest 2A 2,914,389 1,806,228",
+        "page_number": 1
+      }
+    },
+    {
+      "line_item_name": "Deposits",
+      "schedule_number": "3",
+      "current_value": 6431342479.0,
+      "comparative_value": 5458732889.0,
+      "evidence": {
+        "source_text": "Deposits 3 6,431,342,479 5,458,732,889",
+        "page_number": 1
+      }
+    },
+    {
+      "line_item_name": "Borrowings",
+      "schedule_number": "4",
+      "current_value": 984156439.0,
+      "comparative_value": 1037139597.0,
+      "evidence": {
+        "source_text": "Borrowings 4 984,156,439 1,037,139,597",
+        "page_number": 1
+      }
+    },
+    {
+      "line_item_name": "Other liabilities and provisions",
+      "schedule_number": "5",
+      "current_value": 587088812.0,
+      "comparative_value": 381403308.0,
+      "evidence": {
+        "source_text": "Other liabilitiesandprovisions 5 587,088,812 381,403,308",
+        "page_number": 1
+      }
+    },
+    {
+      "line_item_name": "Cash and balances with Reserve Bank of India",
+      "schedule_number": "6",
+      "current_value": 379105485.0,
+      "comparative_value": 300765846.0,
+      "evidence": {
+        "source_text": "CashandbalanceswithReserveBankofIndia 6 379,105,485 300,765,846",
+        "page_number": 1
+      }
+    },
+    {
+      "line_item_name": "Balances with banks and money at call and short notice",
+      "schedule_number": "7",
+      "current_value": 114005711.0,
+      "comparative_value": 89922969.0,
+      "evidence": {
+        "source_text": "Balances with banks and money at call and short notice 7 114,005,711 89,922,969",
+        "page_number": 1
+      }
+    },
+    {
+      "line_item_name": "Investments",
+      "schedule_number": "8",
+      "current_value": 2107771120.0,
+      "comparative_value": 1936338475.0,
+      "evidence": {
+        "source_text": "Investments 8 2,107,771,120 1,936,338,475",
+        "page_number": 1
+      }
+    },
+    {
+      "line_item_name": "Advances",
+      "schedule_number": "9",
+      "current_value": 5854809871.0,
+      "comparative_value": 4872904174.0,
+      "evidence": {
+        "source_text": "Advances 9 5,854,809,871 4,872,904,174",
+        "page_number": 1
+      }
+    },
+    {
+      "line_item_name": "Fixed assets",
+      "schedule_number": "10",
+      "current_value": 38146997.0,
+      "comparative_value": 34796976.0,
+      "evidence": {
+        "source_text": "Fixed assets 10 38,146,997 34,796,976",
+        "page_number": 1
+      }
+    },
+    {
+      "line_item_name": "Other assets",
+      "schedule_number": "11",
+      "current_value": 429602423.0,
+      "comparative_value": 387394824.0,
+      "evidence": {
+        "source_text": "Other assets 11 429,602,423 387,394,824",
+        "page_number": 1
+      }
+    },
+    {
+      "line_item_name": "Contingent liabilities",
+      "schedule_number": "12",
+      "current_value": 8182842892.0,
+      "comparative_value": 8535273826.0,
+      "evidence": {
+        "source_text": "Contingent liabilities 12 8,182,842,892 8,535,273,826",
+        "page_number": 1
+      }
+    },
+    {
+      "line_item_name": "Bills for collection",
+      "schedule_number": null,
+      "current_value": 308480352.0,
+      "comparative_value": 234899997.0,
+      "evidence": {
+        "source_text": "Bills for collection 308,480,352 234,899,997",
+        "page_number": 1
+      }
+    }
+  ],
+  "additional_fields": {}
+}

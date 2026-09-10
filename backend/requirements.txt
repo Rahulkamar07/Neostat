@@ -19,6 +19,8 @@ pdfplumber>=0.11.4
 pypdf>=5.1.0
 Pillow>=11.0.0
 pdf2image>=1.17.0
+PyMuPDF>=1.24.0
+rapidocr-onnxruntime>=1.4.0
 
 # LLM clients (only the configured provider is used at runtime)
 openai>=1.54.0
