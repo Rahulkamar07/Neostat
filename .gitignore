@@ -36,6 +36,15 @@ uploads/
 Thumbs.db
 .vscode/
 .idea/
+.cursor/
+.agents/
+
+# Test datasets (large files, not project code)
+New Dataset 1/
+New Dataset 1.zip
+
+# Company case study document (proprietary)
+*.docx
 
 # Extracted spec scratch
 _spec_extract.txt
