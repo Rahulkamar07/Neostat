@@ -1,0 +1,140 @@
+{% extends "base.html" %}
+
+{% block title %}{{ doc.document_name }} &bull; Document Details{% endblock %}
+
+{% block content %}
+<div style="margin-bottom: 1.5rem;">
+  <a href="/" style="color: #818cf8; text-decoration: none; font-size: 0.9rem; font-weight: 500;">
+    &larr; Back to Dashboard
+  </a>
+</div>
+
+<!-- Header Card -->
+<section class="card">
+  <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+    <div>
+      <span class="nav-badge" style="text-transform: uppercase; margin-bottom: 0.5rem; display: inline-block;">
+        {{ doc.document_type|replace('_', ' ') }}
+      </span>
+      <h1 class="card-title" style="font-size: 1.75rem;">{{ doc.document_name }}</h1>
+      <p class="card-subtitle" style="margin-bottom: 0;">
+        Processed at {{ doc.created_at }} &bull; File Size: {{ (doc.file_size_bytes / 1024)|round(1) }} KB &bull; {{ doc.page_count }} Page(s)
+      </p>
+    </div>
+
+    <div>
+      {% if doc.validation_status == 'PASS' %}
+        <span class="badge badge-pass" style="font-size: 0.95rem; padding: 0.5rem 1.25rem;">&check; VALIDATION PASS</span>
+      {% elif doc.validation_status == 'FAIL' %}
+        <span class="badge badge-fail" style="font-size: 0.95rem; padding: 0.5rem 1.25rem;">&times; VALIDATION DISCREPANCY</span>
+      {% else %}
+        <span class="badge badge-na" style="font-size: 0.95rem; padding: 0.5rem 1.25rem;">NOT APPLICABLE</span>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<!-- Overview Metrics Grid -->
+<div class="detail-grid">
+  <div class="stat-box">
+    <div class="stat-label">Extraction Confidence</div>
+    <div class="stat-value" style="color: #818cf8;">
+      {% if doc.overall_confidence %}
+        {{ (doc.overall_confidence * 100)|round(1) }}%
+      {% else %}
+        N/A
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="stat-box">
+    <div class="stat-label">Pipeline Latency</div>
+    <div class="stat-value">
+      {% if doc.processing_metadata and doc.processing_metadata.processing_time_seconds %}
+        {{ doc.processing_metadata.processing_time_seconds }}s
+      {% else %}
+        &mdash;
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="stat-box">
+    <div class="stat-label">Extraction Pipeline</div>
+    <div class="stat-value" style="font-size: 1.1rem; text-transform: uppercase; margin-top: 0.25rem;">
+      {% if doc.processing_metadata and doc.processing_metadata.ocr_used %}
+        OCR Rasterization
+      {% else %}
+        Native PDF Text
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="stat-box">
+    <div class="stat-label">Extraction Model</div>
+    <div class="stat-value" style="font-size: 1.05rem; margin-top: 0.25rem; font-family: var(--font-mono);">
+      {% if doc.processing_metadata and doc.processing_metadata.llm_model %}
+        {{ doc.processing_metadata.llm_model }}
+      {% else %}
+        Gemini Flash
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<!-- Financial Validation Checks Section -->
+<section class="card">
+  <h2 class="card-title">Deterministic Financial Verification</h2>
+  <p class="card-subtitle">
+    Mathematical formula checks computed directly against the extracted operands to verify numerical consistency.
+  </p>
+
+  {% if doc.validation_summary and doc.validation_summary.checks %}
+    <div>
+      {% for check in doc.validation_summary.checks %}
+      <div class="check-item {% if check.status == 'FAIL' %}fail{% endif %}">
+        <div>
+          <div style="font-weight: 600; margin-bottom: 0.25rem;">
+            {{ check.name|replace('_', ' ')|title }}
+            {% if check.period %}
+              <span style="color: var(--text-dim); font-size: 0.8rem;">({{ check.period }})</span>
+            {% endif %}
+          </div>
+          <div class="check-formula">{{ check.formula }}</div>
+          {% if check.status != 'NOT_APPLICABLE' %}
+            <div class="check-variance" style="margin-top: 0.35rem;">
+              Calculated: <strong>{{ check.calculated_value }}</strong> &bull; Reported: <strong>{{ check.reported_value }}</strong> &bull; Variance: <strong>{{ check.variance }}</strong>
+            </div>
+          {% endif %}
+        </div>
+        <div>
+          {% if check.status == 'PASS' %}
+            <span class="badge badge-pass">&check; PASS</span>
+          {% elif check.status == 'FAIL' %}
+            <span class="badge badge-fail">&times; FAIL</span>
+          {% else %}
+            <span class="badge badge-na">N/A (Missing fields)</span>
+          {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p style="color: var(--text-dim);">No financial validation rules executed for this document.</p>
+  {% endif %}
+</section>
+
+<!-- Extracted Structured Data JSON View -->
+<section class="card">
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+    <div>
+      <h2 class="card-title">Structured Extracted Data (JSON)</h2>
+      <p class="card-subtitle" style="margin-bottom: 0;">Complete grounded schema output with evidence snippets and confidence scores</p>
+    </div>
+    <button onclick="navigator.clipboard.writeText(document.getElementById('raw-json').textContent); alert('Copied structured JSON to clipboard!');" class="btn-submit" style="padding: 0.4rem 1rem; font-size: 0.8rem;">
+      Copy JSON
+    </button>
+  </div>
+
+  <pre class="json-viewer" id="raw-json">{{ doc.extracted_data | tojson(indent=2) }}</pre>
+</section>
+{% endblock %}

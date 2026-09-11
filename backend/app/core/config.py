@@ -79,6 +79,18 @@ class Settings(BaseSettings):
         path.mkdir(parents=True, exist_ok=True)
         return path
 
+    @property
+    def frontend_dir(self) -> Path:
+        return PROJECT_ROOT / "frontend"
+
+    @property
+    def templates_dir(self) -> Path:
+        return self.frontend_dir / "templates"
+
+    @property
+    def static_dir(self) -> Path:
+        return self.frontend_dir / "static"
+
     def sqlite_path(self) -> Path:
         """Resolved SQLite file path when DATABASE_URL is a relative sqlite URL."""
         url = self.database_url

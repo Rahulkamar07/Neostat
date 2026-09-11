@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard &bull; Document Intelligence Platform{% endblock %}
+
+{% block content %}
+<div id="status-message" style="display: none;"></div>
+
+<!-- Upload & Processing Section -->
+<section class="card">
+  <h1 class="card-title">Upload & Extract Document</h1>
+  <p class="card-subtitle">Upload a PDF, JPG, or PNG document (max 3 pages). The platform extracts text, parses structured data, and runs financial verification.</p>
+
+  <form id="upload-form">
+    <div class="upload-zone" id="upload-zone">
+      <input type="file" id="file-input" class="file-input" accept=".pdf,.jpg,.jpeg,.png" required />
+      <span class="upload-icon">📄</span>
+      <div class="upload-text" id="upload-text">Drag & drop your document here, or click to browse</div>
+      <div class="upload-hint">Supported formats: PDF, JPG, PNG &bull; Max 3 pages &bull; Up to 15MB</div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="document-type-select" class="form-label">Document Classification</label>
+        <select id="document-type-select" class="select-control" required>
+          <option value="invoice">Invoice / Receipt</option>
+          <option value="balance_sheet">Balance Sheet</option>
+          <option value="profit_and_loss">Profit & Loss Statement</option>
+          <option value="cash_flow_statement">Cash Flow Statement</option>
+        </select>
+      </div>
+
+      <div>
+        <button type="submit" id="submit-btn" class="btn-submit">
+          <span>Process Document</span>
+          <span>&rarr;</span>
+        </button>
+      </div>
+    </div>
+  </form>
+</section>
+
+<!-- Processed Documents History -->
+<section class="card">
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+    <div>
+      <h2 class="card-title">Processed Documents</h2>
+      <p class="card-subtitle" style="margin-bottom: 0;">History of all extracted and verified financial records</p>
+    </div>
+    <span class="nav-badge">{{ total_count }} Total Records</span>
+  </div>
+
+  <div class="table-responsive">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Document Name</th>
+          <th>Type</th>
+          <th>Pages</th>
+          <th>Confidence</th>
+          <th>Validation</th>
+          <th>Processed Date</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% if documents %}
+          {% for doc in documents %}
+          <tr>
+            <td>
+              <a href="/documents/{{ doc.document_name }}">
+                <strong>{{ doc.document_name }}</strong>
+              </a>
+            </td>
+            <td>
+              <span style="text-transform: capitalize;">{{ doc.document_type|replace('_', ' ') }}</span>
+            </td>
+            <td>{{ doc.page_count }}</td>
+            <td>
+              <div class="confidence-meter">
+                {% if doc.overall_confidence %}
+                  <div class="confidence-bar">
+                    <div class="confidence-fill" style="width: {{ (doc.overall_confidence * 100)|round }}%;"></div>
+                  </div>
+                  <span>{{ (doc.overall_confidence * 100)|round }}%</span>
+                {% else %}
+                  <span style="color: var(--text-dim);">&mdash;</span>
+                {% endif %}
+              </div>
+            </td>
+            <td>
+              {% if doc.validation_status == 'PASS' %}
+                <span class="badge badge-pass">&check; PASS</span>
+              {% elif doc.validation_status == 'FAIL' %}
+                <span class="badge badge-fail">&times; FAIL</span>
+              {% elif doc.validation_status == 'NOT_APPLICABLE' %}
+                <span class="badge badge-na">N/A</span>
+              {% else %}
+                <span class="badge badge-processed">{{ doc.processing_status }}</span>
+              {% endif %}
+            </td>
+            <td style="color: var(--text-dim);">
+              {{ doc.created_at[:10] if doc.created_at else 'Recent' }}
+            </td>
+            <td>
+              <a href="/documents/{{ doc.document_name }}" style="font-size: 0.85rem;">View Details &rarr;</a>
+            </td>
+          </tr>
+          {% endfor %}
+        {% else %}
+          <tr>
+            <td colspan="7" style="text-align: center; color: var(--text-dim); padding: 2.5rem;">
+              No documents processed yet. Upload your first document above to see results.
+            </td>
+          </tr>
+        {% endif %}
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- Loading Overlay -->
+<div class="loading-overlay" id="loading-overlay">
+  <div class="spinner"></div>
+  <div style="font-size: 1.1rem; font-weight: 600; color: #fff;">Processing Document Pipeline...</div>
+  <div style="color: var(--text-muted); font-size: 0.85rem;">Running Input Validation &rarr; OCR Extraction &rarr; LLM Structuring &rarr; Financial Formula Verification</div>
+</div>
+{% endblock %}

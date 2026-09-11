@@ -225,3 +225,37 @@ def test_get_document_not_found_returns_404(client):
     body = response.json()
     assert "error" in body
     assert body["error"]["code"] == "DOCUMENT_NOT_FOUND"
+
+
+def test_dashboard_page_loads(client):
+    response = client.get("/")
+    assert response.status_code == 200
+    assert "text/html" in response.headers["content-type"]
+    assert "Upload & Extract Document" in response.text
+    assert "Processed Documents" in response.text
+
+
+def test_document_detail_page_loads(client, test_db_session):
+    # Insert a dummy document record directly
+    from app.models.document import DocumentRecord
+    rec = DocumentRecord(
+        document_name="test_doc.pdf",
+        document_type="invoice",
+        file_type="application/pdf",
+        page_count=1,
+        file_size_bytes=1000,
+        processing_status="PROCESSED",
+        validation_status="PASS",
+        overall_confidence=0.95,
+        extracted_data={"invoice_number": {"value": "INV-1"}},
+        validation_summary={"checks": [], "overall_status": "PASS", "issues": []},
+        processing_metadata={"processing_time_seconds": 1.2, "ocr_used": False, "llm_model": "gemini-3.5-flash-lite"},
+    )
+    test_db_session.add(rec)
+    test_db_session.commit()
+
+    response = client.get("/documents/test_doc.pdf")
+    assert response.status_code == 200
+    assert "text/html" in response.headers["content-type"]
+    assert "test_doc.pdf" in response.text
+    assert "INV-1" in response.text

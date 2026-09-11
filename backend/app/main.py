@@ -90,5 +90,16 @@ async def unhandled_exception_handler(request: Request, exc: Exception):
     )
 
 
-# Register API routes
+from fastapi.staticfiles import StaticFiles
+
+from app.api.routes.documents import router as documents_router
+from app.api.routes.web import web_router
+
+
+# Mount static directory if it exists
+if settings.static_dir.exists():
+    app.mount("/static", StaticFiles(directory=str(settings.static_dir)), name="static")
+
+# Register routes
 app.include_router(documents_router)
+app.include_router(web_router)
