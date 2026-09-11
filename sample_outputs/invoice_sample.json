@@ -1,165 +1,237 @@
 {
-  "invoice_number": {
-    "value": null,
-    "confidence": null,
-    "evidence": null,
-    "page_number": null,
-    "source_text": null
-  },
-  "invoice_date": {
-    "value": "19/10/2018",
-    "confidence": 1.0,
-    "evidence": {
-      "source_text": "19/10/2018 20:49:59#01",
-      "page_number": 1
+  "id": 12,
+  "document_name": "batch3-1354.jpg",
+  "document_type": "invoice",
+  "file_type": "image/jpeg",
+  "page_count": 1,
+  "file_size_bytes": 542108,
+  "processing_status": "PROCESSED",
+  "validation_status": "PASS",
+  "overall_confidence": 1.0,
+  "extracted_data": {
+    "invoice_number": {
+      "value": "138236",
+      "confidence": 1.0,
+      "evidence": {
+        "source_text": "138236",
+        "page_number": 1
+      },
+      "page_number": 1,
+      "source_text": "138236"
     },
-    "page_number": 1,
-    "source_text": "19/10/2018 20:49:59#01"
-  },
-  "due_date": {
-    "value": null,
-    "confidence": null,
-    "evidence": null,
-    "page_number": null,
-    "source_text": null
-  },
-  "vendor_name": {
-    "value": "INDAH GIFT& HOME DECO",
-    "confidence": 1.0,
-    "evidence": {
-      "source_text": "INDAH GIFT& HOME DECO",
-      "page_number": 1
+    "invoice_date": {
+      "value": "Jan 06 2022",
+      "confidence": 1.0,
+      "evidence": {
+        "source_text": "Jan 06 2022",
+        "page_number": 1
+      },
+      "page_number": 1,
+      "source_text": "Jan 06 2022"
     },
-    "page_number": 1,
-    "source_text": "INDAH GIFT& HOME DECO"
-  },
-  "vendor_address": {
-    "value": "27,JALAN DEDAP 13\nTAMAN JOHOR JAYA\n81100 JOHOR BAHRU,JOHOR.",
-    "confidence": 1.0,
-    "evidence": {
-      "source_text": "27,JALAN DEDAP 13\nTAMAN JOHOR JAYA\n81100 JOHOR BAHRU,JOHOR.",
-      "page_number": 1
+    "due_date": {
+      "value": null,
+      "confidence": null,
+      "evidence": null,
+      "page_number": null,
+      "source_text": null
     },
-    "page_number": 1,
-    "source_text": "27,JALAN DEDAP 13\nTAMAN JOHOR JAYA\n81100 JOHOR BAHRU,JOHOR."
-  },
-  "customer_name": {
-    "value": "tan woon yann",
-    "confidence": 1.0,
-    "evidence": {
-      "source_text": "tan woon yann",
-      "page_number": 1
+    "vendor_name": {
+      "value": "A.E. Blake Sales Ltd.",
+      "confidence": 1.0,
+      "evidence": {
+        "source_text": "A.E.BlakeSalesLtd.",
+        "page_number": 1
+      },
+      "page_number": 1,
+      "source_text": "A.E.BlakeSalesLtd."
     },
-    "page_number": 1,
-    "source_text": "tan woon yann"
-  },
-  "customer_address": {
-    "value": null,
-    "confidence": null,
-    "evidence": null,
-    "page_number": null,
-    "source_text": null
-  },
-  "currency": {
-    "value": "RM",
-    "confidence": 1.0,
-    "evidence": {
-      "source_text": "RM",
-      "page_number": 1
+    "vendor_address": {
+      "value": "100 Consilium Place Suite 200 Scarborough, ON M1H3E3",
+      "confidence": 1.0,
+      "evidence": {
+        "source_text": "100ConsiliumPlace\nSuite200\nScarborough, ON\nM1H3E3",
+        "page_number": 1
+      },
+      "page_number": 1,
+      "source_text": "100ConsiliumPlace\nSuite200\nScarborough, ON\nM1H3E3"
     },
-    "page_number": 1,
-    "source_text": "RM"
-  },
-  "subtotal": {
-    "value": null,
-    "confidence": null,
-    "evidence": null,
-    "page_number": null,
-    "source_text": null
-  },
-  "tax_amount": {
-    "value": null,
-    "confidence": null,
-    "evidence": null,
-    "page_number": null,
-    "source_text": null
-  },
-  "tax_rate": {
-    "value": null,
-    "confidence": null,
-    "evidence": null,
-    "page_number": null,
-    "source_text": null
-  },
-  "discount": {
-    "value": 5.59,
-    "confidence": 1.0,
-    "evidence": {
-      "source_text": "-5.59",
-      "page_number": 1
+    "customer_name": {
+      "value": "Oz Optics Ltd.",
+      "confidence": 1.0,
+      "evidence": {
+        "source_text": "Oz Optics Ltd.",
+        "page_number": 1
+      },
+      "page_number": 1,
+      "source_text": "Oz Optics Ltd."
     },
-    "page_number": 1,
-    "source_text": "-5.59"
-  },
-  "rounding_adjustment": {
-    "value": -0.01,
-    "confidence": 1.0,
-    "evidence": {
-      "source_text": "ROUNDING ADJ\n10'0-\nRH\n60.30",
-      "page_number": 1
+    "customer_address": {
+      "value": "219 Westbrook Road CARP, Ontario, Canada K0A 1L0",
+      "confidence": 1.0,
+      "evidence": {
+        "source_text": "219 Westbrook Road\nCARP, Ontario, Canada\nK0A 1L0",
+        "page_number": 1
+      },
+      "page_number": 1,
+      "source_text": "219 Westbrook Road\nCARP, Ontario, Canada\nK0A 1L0"
     },
-    "page_number": 1,
-    "source_text": "10'0-"
-  },
-  "total_amount": {
-    "value": 60.3,
-    "confidence": 1.0,
-    "evidence": {
-      "source_text": "RH\n60.30",
-      "page_number": 1
+    "currency": {
+      "value": "CAD",
+      "confidence": 1.0,
+      "evidence": {
+        "source_text": "CAD",
+        "page_number": 1
+      },
+      "page_number": 1,
+      "source_text": "CAD"
     },
-    "page_number": 1,
-    "source_text": "RH\n60.30"
-  },
-  "cash_paid": {
-    "value": 70.3,
-    "confidence": 1.0,
-    "evidence": {
-      "source_text": "CASH.\nRH\n70.30",
-      "page_number": 1
+    "subtotal": {
+      "value": 1128.0,
+      "confidence": 1.0,
+      "evidence": {
+        "source_text": "$ 1,128.00",
+        "page_number": 1
+      },
+      "page_number": 1,
+      "source_text": "$ 1,128.00"
     },
-    "page_number": 1,
-    "source_text": "70.30"
-  },
-  "change_given": {
-    "value": 10.0,
-    "confidence": 1.0,
-    "evidence": {
-      "source_text": "CHANGE\nRH\n10.00",
-      "page_number": 1
+    "tax_amount": {
+      "value": 146.64,
+      "confidence": 1.0,
+      "evidence": {
+        "source_text": "$ 146.64",
+        "page_number": 1
+      },
+      "page_number": 1,
+      "source_text": "$ 146.64"
     },
-    "page_number": 1,
-    "source_text": "10.00"
-  },
-  "line_items": [
-    {
-      "description": "ST-PRIVILEGE CARD/GD INDAH",
-      "quantity": 1.0,
-      "unit_price": 10.0,
-      "amount": 10.0,
-      "tax_rate": null,
-      "discount": null,
-      "page_number": 1
+    "tax_rate": {
+      "value": 13.0,
+      "confidence": 1.0,
+      "evidence": {
+        "source_text": "13%HST",
+        "page_number": 1
+      },
+      "page_number": 1,
+      "source_text": "13%HST"
     },
-    {
-      "description": "GF-TABLELAMP/STITCH",
-      "quantity": 1.0,
-      "unit_price": 55.9,
-      "amount": 55.9,
-      "tax_rate": null,
-      "discount": 5.59,
-      "page_number": 1
-    }
-  ],
-  "additional_fields": {}
+    "discount": {
+      "value": null,
+      "confidence": null,
+      "evidence": null,
+      "page_number": null,
+      "source_text": null
+    },
+    "rounding_adjustment": {
+      "value": null,
+      "confidence": null,
+      "evidence": null,
+      "page_number": null,
+      "source_text": null
+    },
+    "total_amount": {
+      "value": 1274.64,
+      "confidence": 1.0,
+      "evidence": {
+        "source_text": "$ 1,274.64",
+        "page_number": 1
+      },
+      "page_number": 1,
+      "source_text": "$ 1,274.64"
+    },
+    "cash_paid": {
+      "value": null,
+      "confidence": null,
+      "evidence": null,
+      "page_number": null,
+      "source_text": null
+    },
+    "change_given": {
+      "value": null,
+      "confidence": null,
+      "evidence": null,
+      "page_number": null,
+      "source_text": null
+    },
+    "line_items": [
+      {
+        "description": "100237 BC 27767 Araldite 2014 HT Epoxy Paste GRAY 50ml 2:1 6 cartridges/box| 120 cartridges/case BC/REF#BC27767 D.O.E on products",
+        "quantity": 24.0,
+        "unit_price": 23.5,
+        "amount": 564.0,
+        "tax_rate": null,
+        "discount": null,
+        "page_number": 1
+      },
+      {
+        "description": "100237 BC 27767 Araldite2014HTEpoxyPasteGRAY50ml2:1 6 cartridges/box | 120 cartridges/case BC/REF#BC 27767 D.O.E on products",
+        "quantity": 24.0,
+        "unit_price": 23.5,
+        "amount": 564.0,
+        "tax_rate": null,
+        "discount": null,
+        "page_number": 1
+      }
+    ],
+    "additional_fields": {}
+  },
+  "validation_summary": {
+    "checks": [
+      {
+        "name": "invoice_total_check",
+        "formula": "subtotal + tax_amount - discount + rounding_adjustment",
+        "operands": {
+          "subtotal": 1128.0,
+          "tax_amount": 146.64,
+          "discount": null,
+          "rounding_adjustment": null
+        },
+        "calculated_value": 1274.64,
+        "reported_value": 1274.64,
+        "variance": 0.0,
+        "status": "PASS",
+        "period": null
+      },
+      {
+        "name": "line_item_1_amount_check",
+        "formula": "quantity * unit_price",
+        "operands": {
+          "quantity": 24.0,
+          "unit_price": 23.5
+        },
+        "calculated_value": 564.0,
+        "reported_value": 564.0,
+        "variance": 0.0,
+        "status": "PASS",
+        "period": null
+      },
+      {
+        "name": "line_item_2_amount_check",
+        "formula": "quantity * unit_price",
+        "operands": {
+          "quantity": 24.0,
+          "unit_price": 23.5
+        },
+        "calculated_value": 564.0,
+        "reported_value": 564.0,
+        "variance": 0.0,
+        "status": "PASS",
+        "period": null
+      }
+    ],
+    "overall_status": "PASS",
+    "issues": []
+  },
+  "processing_metadata": {
+    "processing_time_seconds": 21.701,
+    "ocr_used": true,
+    "ocr_methods": [
+      "ocr"
+    ],
+    "llm_provider": "gemini",
+    "llm_model": "gemini-3.5-flash-lite"
+  },
+  "created_at": "2026-09-11T13:41:32.320855",
+  "updated_at": "2026-09-11T13:41:32.320855"
 }

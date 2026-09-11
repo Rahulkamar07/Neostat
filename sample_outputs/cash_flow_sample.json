@@ -1,418 +1,508 @@
 {
-  "header": {
-    "company_name": {
-      "value": "HDFC BANK",
-      "confidence": 0.9,
-      "evidence": {
-        "source_text": "HDFC BANK",
-        "page_number": 1
+  "id": 10,
+  "document_name": "Consolidated Cash Flow Statement 2017.pdf",
+  "document_type": "cash_flow_statement",
+  "file_type": "application/pdf",
+  "page_count": 2,
+  "file_size_bytes": 237152,
+  "processing_status": "PROCESSED",
+  "validation_status": "FAIL",
+  "overall_confidence": 0.93,
+  "extracted_data": {
+    "header": {
+      "company_name": {
+        "value": "HDFC BANK",
+        "confidence": 0.9,
+        "evidence": {
+          "source_text": "HDFC BANK",
+          "page_number": 1
+        },
+        "page_number": 1,
+        "source_text": "HDFC BANK"
       },
-      "page_number": 1,
-      "source_text": "HDFC BANK"
-    },
-    "statement_title": {
-      "value": "Consolidated Cash Flow Statement",
-      "confidence": 1.0,
-      "evidence": {
-        "source_text": "Consolidated Cash Flow Statement",
-        "page_number": 1
+      "statement_title": {
+        "value": "Consolidated Cash Flow Statement",
+        "confidence": 0.95,
+        "evidence": {
+          "source_text": "Consolidated Cash Flow Statement",
+          "page_number": 1
+        },
+        "page_number": 1,
+        "source_text": "Consolidated Cash Flow Statement"
       },
-      "page_number": 1,
-      "source_text": "Consolidated Cash Flow Statement"
-    },
-    "currency": {
-      "value": null,
-      "confidence": null,
-      "evidence": null,
-      "page_number": null,
-      "source_text": null
-    },
-    "unit_multiplier": {
-      "value": "in \u2018000",
-      "confidence": 0.9,
-      "evidence": {
-        "source_text": "in\u201c000",
-        "page_number": 1
+      "currency": {
+        "value": null,
+        "confidence": null,
+        "evidence": null,
+        "page_number": null,
+        "source_text": null
       },
-      "page_number": 1,
-      "source_text": "in\u201c000"
-    },
-    "reporting_period": {
-      "value": "31-Mar-17",
-      "confidence": 1.0,
-      "evidence": {
-        "source_text": "31-Mar-17",
-        "page_number": 1
+      "unit_multiplier": {
+        "value": "'000",
+        "confidence": 0.9,
+        "evidence": {
+          "source_text": "in“000",
+          "page_number": 1
+        },
+        "page_number": 1,
+        "source_text": "in“000"
       },
-      "page_number": 1,
-      "source_text": "31-Mar-17"
+      "reporting_period": {
+        "value": "31-Mar-17",
+        "confidence": 0.95,
+        "evidence": {
+          "source_text": "31-Mar-17",
+          "page_number": 1
+        },
+        "page_number": 1,
+        "source_text": "31-Mar-17"
+      },
+      "comparative_period": {
+        "value": "31-Mar-16",
+        "confidence": 0.95,
+        "evidence": {
+          "source_text": "31-Mar-16",
+          "page_number": 1
+        },
+        "page_number": 1,
+        "source_text": "31-Mar-16"
+      }
+    },
+    "current_period": {
+      "period": "31-Mar-17",
+      "profit_before_tax": 233311478.0,
+      "net_cash_operating": 172815931.0,
+      "net_cash_investing": -11476802.0,
+      "net_cash_financing": -58929743.0,
+      "fx_translation_adjustment": -282622.0,
+      "net_increase_in_cash": 102422381.0,
+      "opening_cash_equivalents": 390688815.0,
+      "cash_acquired_adjustments": 295617.0,
+      "closing_cash_equivalents": 493111196.0
     },
     "comparative_period": {
-      "value": "31-Mar-16",
-      "confidence": 1.0,
-      "evidence": {
-        "source_text": "31-Mar-16",
-        "page_number": 1
+      "period": "31-Mar-16",
+      "profit_before_tax": 194949948.0,
+      "net_cash_operating": -344353663.0,
+      "net_cash_investing": -8655510.0,
+      "net_cash_financing": 378151341.0,
+      "fx_translation_adjustment": 282433.0,
+      "net_increase_in_cash": 25424601.0,
+      "opening_cash_equivalents": 365264214.0,
+      "cash_acquired_adjustments": null,
+      "closing_cash_equivalents": 390688815.0
+    },
+    "line_items": [
+      {
+        "line_item_name": "Consolidated profit before income tax",
+        "schedule_number": null,
+        "current_value": 233311478.0,
+        "comparative_value": 194949948.0,
+        "evidence": {
+          "source_text": "Consolidated profit before income tax 233,311,478 194,949,948",
+          "page_number": 1
+        }
       },
-      "page_number": 1,
-      "source_text": "31-Mar-16"
-    }
+      {
+        "line_item_name": "Depreciation on fixed assets",
+        "schedule_number": null,
+        "current_value": 8861876.0,
+        "comparative_value": 7380326.0,
+        "evidence": {
+          "source_text": "Depreciation on fixed assets 8,861,876 7,380,326",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "(Profit) / loss on revaluation of investments",
+        "schedule_number": null,
+        "current_value": -87543.0,
+        "comparative_value": 173689.0,
+        "evidence": {
+          "source_text": "(Profit) / loss on revaluation of investments (87,543) 173,689",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Amortisationofpremiaonheldtomaturityinvestments",
+        "schedule_number": null,
+        "current_value": 1756569.0,
+        "comparative_value": 1002801.0,
+        "evidence": {
+          "source_text": "Amortisationofpremiaonheldtomaturityinvestments 1,756,569 1,002,801",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "(Profit) / loss on sale of fixed assets",
+        "schedule_number": null,
+        "current_value": 16229.0,
+        "comparative_value": 1185.0,
+        "evidence": {
+          "source_text": "(Profit) / loss on sale of fixed assets 16,229 1,185",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Provision/ charge for nonperforming assets",
+        "schedule_number": null,
+        "current_value": 37024296.0,
+        "comparative_value": 25179864.0,
+        "evidence": {
+          "source_text": "Provision/ charge for nonperforming assets 37,024,296 25,179,864",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "ProvisionfordimunitioninvalueofInvestments",
+        "schedule_number": null,
+        "current_value": -76417.0,
+        "comparative_value": 146543.0,
+        "evidence": {
+          "source_text": "ProvisionfordimunitioninvalueofInvestments (76,417) 146,543",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Floating provisions",
+        "schedule_number": null,
+        "current_value": 250000.0,
+        "comparative_value": 1150000.0,
+        "evidence": {
+          "source_text": "Floating provisions 250,000 1,150,000",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Provision for standard assets",
+        "schedule_number": null,
+        "current_value": 4312322.0,
+        "comparative_value": 4648890.0,
+        "evidence": {
+          "source_text": "Provision for standard assets 4,312,322 4,648,890",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Contingency provisions",
+        "schedule_number": null,
+        "current_value": 388440.0,
+        "comparative_value": 218602.0,
+        "evidence": {
+          "source_text": "Contingency provisions 388,440 218,602",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Share in current year's profits of associates",
+        "schedule_number": null,
+        "current_value": -23393.0,
+        "comparative_value": -37278.0,
+        "evidence": {
+          "source_text": "Share in current year's profits of associates (23,393) (37,278)",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "(Increase)/ decrease in investments(excluding investments in subsidiaries)",
+        "schedule_number": null,
+        "current_value": -173257700.0,
+        "comparative_value": -391159616.0,
+        "evidence": {
+          "source_text": "(Increase)/ decrease in investments(excluding investments in subsidiaries) (173,257,700) (391,159,616)",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "(Increase)/ decrease in advances",
+        "schedule_number": null,
+        "current_value": -1018904990.0,
+        "comparative_value": -1066012996.0,
+        "evidence": {
+          "source_text": "(Increase)/ decrease in advances (1,018,904,990) (1,066,012,996)",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Increase /(decrease)in deposits",
+        "schedule_number": null,
+        "current_value": 972609590.0,
+        "comparative_value": 955896412.0,
+        "evidence": {
+          "source_text": "Increase /(decrease)in deposits 972,609,590 955,896,412",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "(Increase)/ decrease in other assets",
+        "schedule_number": null,
+        "current_value": -44855329.0,
+        "comparative_value": -38485747.0,
+        "evidence": {
+          "source_text": "(Increase)/ decrease in other assets (44,855,329) (38,485,747)",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Increase/(decrease)inother liabilitiesandprovisions",
+        "schedule_number": null,
+        "current_value": 228337692.0,
+        "comparative_value": 31324658.0,
+        "evidence": {
+          "source_text": "Increase/(decrease)inother liabilitiesandprovisions 228,337,692 31,324,658",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Direct taxes paid (net of refunds)",
+        "schedule_number": null,
+        "current_value": -76847189.0,
+        "comparative_value": -70730944.0,
+        "evidence": {
+          "source_text": "Direct taxes paid (net of refunds) (76,847,189) (70,730,944)",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Net cash flow(used in) / from operating activities",
+        "schedule_number": null,
+        "current_value": 172815931.0,
+        "comparative_value": -344353663.0,
+        "evidence": {
+          "source_text": "Net cash flow(used in) / from operating activities 172,815,931 (344,353,663)",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Purchase of fixed assets",
+        "schedule_number": null,
+        "current_value": -11577570.0,
+        "comparative_value": -8771635.0,
+        "evidence": {
+          "source_text": "Purchase of fixed assets (11,577,570) (8,771,635)",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Proceeds from saleoffixed assets",
+        "schedule_number": null,
+        "current_value": 100768.0,
+        "comparative_value": 116125.0,
+        "evidence": {
+          "source_text": "Proceeds from saleoffixed assets 100,768 116,125",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Net cash used in investing activities",
+        "schedule_number": null,
+        "current_value": -11476802.0,
+        "comparative_value": -8655510.0,
+        "evidence": {
+          "source_text": "Net cash used in investing activities (11,476,802) (8,655,510)",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Increase in minority interest",
+        "schedule_number": null,
+        "current_value": 818605.0,
+        "comparative_value": 189954.0,
+        "evidence": {
+          "source_text": "Increase in minority interest 818,605 189,954",
+          "page_number": 2
+        }
+      },
+      {
+        "line_item_name": "Moneyreceived onexerciseof stockoptionsby employees",
+        "schedule_number": null,
+        "current_value": 22615161.0,
+        "comparative_value": 12229008.0,
+        "evidence": {
+          "source_text": "Moneyreceived onexerciseof stockoptionsby employees 22,615,161 12,229,008",
+          "page_number": 2
+        }
+      },
+      {
+        "line_item_name": "Increase / (decrease) in borrowings (excluding subordinate debt, perpetual debt and upper tier Il instruments)",
+        "schedule_number": null,
+        "current_value": -33898658.0,
+        "comparative_value": 402081134.0,
+        "evidence": {
+          "source_text": "Increase / (decrease) in borrowings (excluding subordinate debt, (33,898,658) 402,081,134",
+          "page_number": 2
+        }
+      },
+      {
+        "line_item_name": "Redemptionofsubordinateddebt",
+        "schedule_number": null,
+        "current_value": -19084500.0,
+        "comparative_value": -12020000.0,
+        "evidence": {
+          "source_text": "Redemptionofsubordinateddebt (19,084,500) (12,020,000)",
+          "page_number": 2
+        }
+      },
+      {
+        "line_item_name": "Dividend paid during the year",
+        "schedule_number": null,
+        "current_value": -24083093.0,
+        "comparative_value": -20091666.0,
+        "evidence": {
+          "source_text": "Dividend paid during the year (24,083,093) (20,091,666)",
+          "page_number": 2
+        }
+      },
+      {
+        "line_item_name": "Tax on dividend",
+        "schedule_number": null,
+        "current_value": -5297258.0,
+        "comparative_value": -4237089.0,
+        "evidence": {
+          "source_text": "Tax on dividend (5,297,258) (4,237,089)",
+          "page_number": 2
+        }
+      },
+      {
+        "line_item_name": "Net cash generated from financing activities",
+        "schedule_number": null,
+        "current_value": -58929743.0,
+        "comparative_value": 378151341.0,
+        "evidence": {
+          "source_text": "Net cash generated from financing activities (58,929,743) 378,151,341",
+          "page_number": 2
+        }
+      },
+      {
+        "line_item_name": "Effectofexchangefluctuationontranslationreserve",
+        "schedule_number": null,
+        "current_value": -282622.0,
+        "comparative_value": 282433.0,
+        "evidence": {
+          "source_text": "Effectofexchangefluctuationontranslationreserve (282,622) 282,433",
+          "page_number": 2
+        }
+      },
+      {
+        "line_item_name": "Cashand cash equivalentson amalgamation[ReferSchedule18(1)]",
+        "schedule_number": "18(1)",
+        "current_value": 295617.0,
+        "comparative_value": null,
+        "evidence": {
+          "source_text": "Cashand cash equivalentson amalgamation[ReferSchedule18(1)] 295,617",
+          "page_number": 2
+        }
+      },
+      {
+        "line_item_name": "Netincrease/(decrease)incashand cashequivalents",
+        "schedule_number": null,
+        "current_value": 102422381.0,
+        "comparative_value": 25424601.0,
+        "evidence": {
+          "source_text": "Netincrease/(decrease)incashand cashequivalents 102,422,381 25,424,601",
+          "page_number": 2
+        }
+      },
+      {
+        "line_item_name": "Cash and cash equivalents as at April 1st (Schedules 6 and 7)",
+        "schedule_number": "6 and 7",
+        "current_value": 390688815.0,
+        "comparative_value": 365264214.0,
+        "evidence": {
+          "source_text": "Cash and cash equivalents as at April 1st (Schedules 6 and 7) 390,688,815 365,264,214",
+          "page_number": 2
+        }
+      },
+      {
+        "line_item_name": "Cash andcashequivalentsas at March31st(Schedules6and 7)",
+        "schedule_number": "6 and 7",
+        "current_value": 493111196.0,
+        "comparative_value": 390688815.0,
+        "evidence": {
+          "source_text": "Cash andcashequivalentsas at March31st(Schedules6and 7) 493,111,196 390,688,815",
+          "page_number": 2
+        }
+      }
+    ],
+    "additional_fields": {}
   },
-  "current_period": {
-    "period": "31-Mar-17",
-    "profit_before_tax": 233311478.0,
-    "net_cash_operating": 172815931.0,
-    "net_cash_investing": -11476802.0,
-    "net_cash_financing": -58929743.0,
-    "fx_translation_adjustment": -282622.0,
-    "net_increase_in_cash": 102422381.0,
-    "opening_cash_equivalents": 390688815.0,
-    "cash_acquired_adjustments": 295617.0,
-    "closing_cash_equivalents": 493111196.0
+  "validation_summary": {
+    "checks": [
+      {
+        "name": "net_change_in_cash_check_current_period",
+        "formula": "net_cash_operating + net_cash_investing + net_cash_financing + fx_translation_adjustment",
+        "operands": {
+          "operating": 172815931.0,
+          "investing": -11476802.0,
+          "financing": -58929743.0,
+          "fx": -282622.0
+        },
+        "calculated_value": 102126764.0,
+        "reported_value": 102422381.0,
+        "variance": 295617.0,
+        "status": "FAIL",
+        "period": "31-Mar-17"
+      },
+      {
+        "name": "cash_reconciliation_check_current_period",
+        "formula": "opening_cash_equivalents + net_increase_in_cash + cash_acquired_adjustments",
+        "operands": {
+          "opening_cash": 390688815.0,
+          "net_increase": 102422381.0,
+          "adjustments": 295617.0
+        },
+        "calculated_value": 493406813.0,
+        "reported_value": 493111196.0,
+        "variance": 295617.0,
+        "status": "FAIL",
+        "period": "31-Mar-17"
+      },
+      {
+        "name": "net_change_in_cash_check_comparative_period",
+        "formula": "net_cash_operating + net_cash_investing + net_cash_financing + fx_translation_adjustment",
+        "operands": {
+          "operating": -344353663.0,
+          "investing": -8655510.0,
+          "financing": 378151341.0,
+          "fx": 282433.0
+        },
+        "calculated_value": 25424601.0,
+        "reported_value": 25424601.0,
+        "variance": 0.0,
+        "status": "PASS",
+        "period": "31-Mar-16"
+      },
+      {
+        "name": "cash_reconciliation_check_comparative_period",
+        "formula": "opening_cash_equivalents + net_increase_in_cash + cash_acquired_adjustments",
+        "operands": {
+          "opening_cash": 365264214.0,
+          "net_increase": 25424601.0,
+          "adjustments": null
+        },
+        "calculated_value": 390688815.0,
+        "reported_value": 390688815.0,
+        "variance": 0.0,
+        "status": "PASS",
+        "period": "31-Mar-16"
+      }
+    ],
+    "overall_status": "FAIL",
+    "issues": [
+      "Check 'net_change_in_cash_check_current_period' failed: calculated 102126764.0 vs reported 102422381.0 (variance 295617.0)",
+      "Check 'cash_reconciliation_check_current_period' failed: calculated 493406813.0 vs reported 493111196.0 (variance 295617.0)"
+    ]
   },
-  "comparative_period": {
-    "period": "31-Mar-16",
-    "profit_before_tax": 194949948.0,
-    "net_cash_operating": -344353663.0,
-    "net_cash_investing": -8655510.0,
-    "net_cash_financing": 378151341.0,
-    "fx_translation_adjustment": 282433.0,
-    "net_increase_in_cash": 25424601.0,
-    "opening_cash_equivalents": 365264214.0,
-    "cash_acquired_adjustments": null,
-    "closing_cash_equivalents": 390688815.0
+  "processing_metadata": {
+    "processing_time_seconds": 50.767,
+    "ocr_used": true,
+    "ocr_methods": [
+      "ocr",
+      "ocr"
+    ],
+    "llm_provider": "gemini",
+    "llm_model": "gemini-3.5-flash-lite"
   },
-  "line_items": [
-    {
-      "line_item_name": "Consolidated profit before income tax",
-      "schedule_number": null,
-      "current_value": 233311478.0,
-      "comparative_value": 194949948.0,
-      "evidence": {
-        "source_text": "Consolidated profit before income tax",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Depreciation on fixed assets",
-      "schedule_number": null,
-      "current_value": 8861876.0,
-      "comparative_value": 7380326.0,
-      "evidence": {
-        "source_text": "Depreciation on fixed assets",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "(Profit) / loss on revaluation of investments",
-      "schedule_number": null,
-      "current_value": -87543.0,
-      "comparative_value": 173689.0,
-      "evidence": {
-        "source_text": "(Profit) / loss on revaluation of investments",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Amortisationofpremiaonheldtomaturityinvestments",
-      "schedule_number": null,
-      "current_value": 1756569.0,
-      "comparative_value": 1002801.0,
-      "evidence": {
-        "source_text": "Amortisationofpremiaonheldtomaturityinvestments",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "(Profit) / loss on sale of fixed assets",
-      "schedule_number": null,
-      "current_value": 16229.0,
-      "comparative_value": 1185.0,
-      "evidence": {
-        "source_text": "(Profit) / loss on sale of fixed assets",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Provision/ charge for nonperforming assets",
-      "schedule_number": null,
-      "current_value": 37024296.0,
-      "comparative_value": 25179864.0,
-      "evidence": {
-        "source_text": "Provision/ charge for nonperforming assets",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "ProvisionfordimunitioninvalueofInvestments",
-      "schedule_number": null,
-      "current_value": -76417.0,
-      "comparative_value": 146543.0,
-      "evidence": {
-        "source_text": "ProvisionfordimunitioninvalueofInvestments",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Floating provisions",
-      "schedule_number": null,
-      "current_value": 250000.0,
-      "comparative_value": 1150000.0,
-      "evidence": {
-        "source_text": "Floating provisions",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Provision for standard assets",
-      "schedule_number": null,
-      "current_value": 4312322.0,
-      "comparative_value": 4648890.0,
-      "evidence": {
-        "source_text": "Provision for standard assets",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Contingency provisions",
-      "schedule_number": null,
-      "current_value": 388440.0,
-      "comparative_value": 218602.0,
-      "evidence": {
-        "source_text": "Contingency provisions",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Share in current year's profits of associates",
-      "schedule_number": null,
-      "current_value": -23393.0,
-      "comparative_value": -37278.0,
-      "evidence": {
-        "source_text": "Share in current year's profits of associates",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "(Increase)/ decrease in investments(excluding investments in subsidiaries)",
-      "schedule_number": null,
-      "current_value": -173257700.0,
-      "comparative_value": -391159616.0,
-      "evidence": {
-        "source_text": "(Increase)/ decrease in investments(excluding investments in subsidiaries)",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "(Increase)/ decrease in advances",
-      "schedule_number": null,
-      "current_value": -1018904990.0,
-      "comparative_value": -1066012996.0,
-      "evidence": {
-        "source_text": "(Increase)/ decrease in advances",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Increase /(decrease)in deposits",
-      "schedule_number": null,
-      "current_value": 972609590.0,
-      "comparative_value": 955896412.0,
-      "evidence": {
-        "source_text": "Increase /(decrease)in deposits",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "(Increase)/ decrease in other assets",
-      "schedule_number": null,
-      "current_value": -44855329.0,
-      "comparative_value": -38485747.0,
-      "evidence": {
-        "source_text": "(Increase)/ decrease in other assets",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Increase/(decrease)inother liabilitiesandprovisions",
-      "schedule_number": null,
-      "current_value": 228337692.0,
-      "comparative_value": 31324658.0,
-      "evidence": {
-        "source_text": "Increase/(decrease)inother liabilitiesandprovisions",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Direct taxes paid (net of refunds)",
-      "schedule_number": null,
-      "current_value": -76847189.0,
-      "comparative_value": -70730944.0,
-      "evidence": {
-        "source_text": "Direct taxes paid (net of refunds)",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Net cash flow(used in) / from operating activities",
-      "schedule_number": null,
-      "current_value": 172815931.0,
-      "comparative_value": -344353663.0,
-      "evidence": {
-        "source_text": "Net cash flow(used in) / from operating activities",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Purchase of fixed assets",
-      "schedule_number": null,
-      "current_value": -11577570.0,
-      "comparative_value": -8771635.0,
-      "evidence": {
-        "source_text": "Purchase of fixed assets",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Proceeds from saleoffixed assets",
-      "schedule_number": null,
-      "current_value": 100768.0,
-      "comparative_value": 116125.0,
-      "evidence": {
-        "source_text": "Proceeds from saleoffixed assets",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Net cash used in investing activities",
-      "schedule_number": null,
-      "current_value": -11476802.0,
-      "comparative_value": -8655510.0,
-      "evidence": {
-        "source_text": "Net cash used in investing activities",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Increase in minority interest",
-      "schedule_number": null,
-      "current_value": 818605.0,
-      "comparative_value": 189954.0,
-      "evidence": {
-        "source_text": "Increase in minority interest",
-        "page_number": 2
-      }
-    },
-    {
-      "line_item_name": "Moneyreceived onexerciseof stockoptionsby employees",
-      "schedule_number": null,
-      "current_value": 22615161.0,
-      "comparative_value": 12229008.0,
-      "evidence": {
-        "source_text": "Moneyreceived onexerciseof stockoptionsby employees",
-        "page_number": 2
-      }
-    },
-    {
-      "line_item_name": "Increase / (decrease) in borrowings (excluding subordinate debt, perpetual debt and upper tier Il instruments)",
-      "schedule_number": null,
-      "current_value": -33898658.0,
-      "comparative_value": 402081134.0,
-      "evidence": {
-        "source_text": "Increase / (decrease) in borrowings (excluding subordinate debt,\n(33,898,658)\n402,081,134\nperpetual debt and upper tier Il instruments)",
-        "page_number": 2
-      }
-    },
-    {
-      "line_item_name": "Redemptionofsubordinateddebt",
-      "schedule_number": null,
-      "current_value": -19084500.0,
-      "comparative_value": -12020000.0,
-      "evidence": {
-        "source_text": "Redemptionofsubordinateddebt",
-        "page_number": 2
-      }
-    },
-    {
-      "line_item_name": "Dividend paid during the year",
-      "schedule_number": null,
-      "current_value": -24083093.0,
-      "comparative_value": -20091666.0,
-      "evidence": {
-        "source_text": "Dividend paid during the year",
-        "page_number": 2
-      }
-    },
-    {
-      "line_item_name": "Tax on dividend",
-      "schedule_number": null,
-      "current_value": -5297258.0,
-      "comparative_value": -4237089.0,
-      "evidence": {
-        "source_text": "Tax on dividend",
-        "page_number": 2
-      }
-    },
-    {
-      "line_item_name": "Net cash generated from financing activities",
-      "schedule_number": null,
-      "current_value": -58929743.0,
-      "comparative_value": 378151341.0,
-      "evidence": {
-        "source_text": "Net cash generated from financing activities",
-        "page_number": 2
-      }
-    },
-    {
-      "line_item_name": "Effectofexchangefluctuationontranslationreserve",
-      "schedule_number": null,
-      "current_value": -282622.0,
-      "comparative_value": 282433.0,
-      "evidence": {
-        "source_text": "Effectofexchangefluctuationontranslationreserve",
-        "page_number": 2
-      }
-    },
-    {
-      "line_item_name": "Cashand cash equivalentson amalgamation[ReferSchedule18(1)]",
-      "schedule_number": "18(1)",
-      "current_value": 295617.0,
-      "comparative_value": null,
-      "evidence": {
-        "source_text": "Cashand cash equivalentson amalgamation[ReferSchedule18(1)]",
-        "page_number": 2
-      }
-    },
-    {
-      "line_item_name": "Netincrease/(decrease)incashand cashequivalents",
-      "schedule_number": null,
-      "current_value": 102422381.0,
-      "comparative_value": 25424601.0,
-      "evidence": {
-        "source_text": "Netincrease/(decrease)incashand cashequivalents",
-        "page_number": 2
-      }
-    },
-    {
-      "line_item_name": "Cash and cash equivalents as at April 1st (Schedules 6 and 7)",
-      "schedule_number": "6 and 7",
-      "current_value": 390688815.0,
-      "comparative_value": 365264214.0,
-      "evidence": {
-        "source_text": "Cash and cash equivalents as at April 1st (Schedules 6 and 7)",
-        "page_number": 2
-      }
-    },
-    {
-      "line_item_name": "Cash andcashequivalentsas at March31st(Schedules6and 7)",
-      "schedule_number": "6and 7",
-      "current_value": 493111196.0,
-      "comparative_value": 390688815.0,
-      "evidence": {
-        "source_text": "Cash andcashequivalentsas at March31st(Schedules6and 7)",
-        "page_number": 2
-      }
-    }
-  ],
-  "additional_fields": {}
+  "created_at": "2026-09-11T13:18:47.944343",
+  "updated_at": "2026-09-11T13:18:47.944343"
 }

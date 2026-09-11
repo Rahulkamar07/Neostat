@@ -73,6 +73,8 @@ graph TD
     Resp --> User
 ```
 
+> **Note**: A static PNG version of this diagram is also available at [`docs/architecture_diagram.png`](docs/architecture_diagram.png) for environments that do not render Mermaid.
+
 ---
 
 ## 📋 Technology Stack

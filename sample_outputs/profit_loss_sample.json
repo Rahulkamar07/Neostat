@@ -1,354 +1,508 @@
 {
-  "header": {
-    "company_name": {
-      "value": "HDFC BANK",
-      "confidence": 0.99,
-      "evidence": {
-        "source_text": "HDFC BANK",
-        "page_number": 1
+  "id": 9,
+  "document_name": "Consolidated Profit & Loss 2017.pdf",
+  "document_type": "profit_and_loss",
+  "file_type": "application/pdf",
+  "page_count": 1,
+  "file_size_bytes": 174965,
+  "processing_status": "PROCESSED",
+  "validation_status": "FAIL",
+  "overall_confidence": 0.982,
+  "extracted_data": {
+    "header": {
+      "company_name": {
+        "value": "HDFC BANK",
+        "confidence": 0.99,
+        "evidence": {
+          "source_text": "HDFC BANK",
+          "page_number": 1
+        },
+        "page_number": 1,
+        "source_text": "HDFC BANK"
       },
-      "page_number": 1,
-      "source_text": "HDFC BANK"
-    },
-    "statement_title": {
-      "value": "Consolidated Statement of Profit and Loss",
-      "confidence": 0.99,
-      "evidence": {
-        "source_text": "Consolidated Statement of Profit and Loss",
-        "page_number": 1
+      "statement_title": {
+        "value": "Consolidated Statement of Profit and Loss",
+        "confidence": 0.99,
+        "evidence": {
+          "source_text": "Consolidated Statement of Profit and Loss",
+          "page_number": 1
+        },
+        "page_number": 1,
+        "source_text": "Consolidated Statement of Profit and Loss"
       },
-      "page_number": 1,
-      "source_text": "Consolidated Statement of Profit and Loss"
-    },
-    "currency": {
-      "value": null,
-      "confidence": null,
-      "evidence": null,
-      "page_number": null,
-      "source_text": null
-    },
-    "unit_multiplier": {
-      "value": "'000",
-      "confidence": 0.95,
-      "evidence": {
-        "source_text": "in\u201c000",
-        "page_number": 1
+      "currency": {
+        "value": null,
+        "confidence": null,
+        "evidence": null,
+        "page_number": null,
+        "source_text": null
       },
-      "page_number": 1,
-      "source_text": "in\u201c000"
-    },
-    "reporting_period": {
-      "value": "31-Mar-17",
-      "confidence": 0.99,
-      "evidence": {
-        "source_text": "Year ended\n31-Mar-17",
-        "page_number": 1
+      "unit_multiplier": {
+        "value": "in“000",
+        "confidence": 0.95,
+        "evidence": {
+          "source_text": "in“000",
+          "page_number": 1
+        },
+        "page_number": 1,
+        "source_text": "in“000"
       },
-      "page_number": 1,
-      "source_text": "31-Mar-17"
+      "reporting_period": {
+        "value": "Year ended 31-Mar-17",
+        "confidence": 0.99,
+        "evidence": {
+          "source_text": "31-Mar-17",
+          "page_number": 1
+        },
+        "page_number": 1,
+        "source_text": "31-Mar-17"
+      },
+      "comparative_period": {
+        "value": "Year ended 31-Mar-16",
+        "confidence": 0.99,
+        "evidence": {
+          "source_text": "31-Mar-16",
+          "page_number": 1
+        },
+        "page_number": 1,
+        "source_text": "31-Mar-16"
+      }
+    },
+    "current_period": {
+      "period": "31-Mar-17",
+      "interest_earned": 732713529.0,
+      "other_income": 128776329.0,
+      "total_income": 861489858.0,
+      "interest_expended": 380415844.0,
+      "operating_expenses": 207510707.0,
+      "provisions_and_contingencies": 120689285.0,
+      "total_expenditure": 708615836.0,
+      "operating_profit": null,
+      "net_profit_before_minority": 152874022.0,
+      "minority_interest": 367165.0,
+      "share_in_profit_of_associates": 23393.0,
+      "consolidated_net_profit": 152530250.0,
+      "profit_brought_forward": 248255886.0,
+      "total_available_for_appropriation": 401060643.0,
+      "transfer_to_statutory_reserve": 37771634.0,
+      "proposed_dividend": 24017772.0,
+      "transfer_to_general_reserve": 14549641.0
     },
     "comparative_period": {
-      "value": "31-Mar-16",
-      "confidence": 0.99,
-      "evidence": {
-        "source_text": "Year ended\n31-Mar-16",
-        "page_number": 1
+      "period": "31-Mar-16",
+      "interest_earned": 631615614.0,
+      "other_income": 112116541.0,
+      "total_income": 743732155.0,
+      "interest_expended": 340695748.0,
+      "operating_expenses": 178318808.0,
+      "provisions_and_contingencies": 96544349.0,
+      "total_expenditure": 615558905.0,
+      "operating_profit": null,
+      "net_profit_before_minority": 128173250.0,
+      "minority_interest": 197212.0,
+      "share_in_profit_of_associates": 37278.0,
+      "consolidated_net_profit": 128013316.0,
+      "profit_brought_forward": 195508642.0,
+      "total_available_for_appropriation": 323521958.0,
+      "transfer_to_statutory_reserve": 31809345.0,
+      "proposed_dividend": null,
+      "transfer_to_general_reserve": 12296213.0
+    },
+    "line_items": [
+      {
+        "line_item_name": "Interest earned",
+        "schedule_number": "13",
+        "current_value": 732713529.0,
+        "comparative_value": 631615614.0,
+        "evidence": {
+          "source_text": "Interest earned 13 732,713,529 631,615,614",
+          "page_number": 1
+        }
       },
-      "page_number": 1,
-      "source_text": "31-Mar-16"
-    }
+      {
+        "line_item_name": "Other income",
+        "schedule_number": "14",
+        "current_value": 128776329.0,
+        "comparative_value": 112116541.0,
+        "evidence": {
+          "source_text": "Other income 14 128,776,329 112,116,541",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Total Income",
+        "schedule_number": null,
+        "current_value": 861489858.0,
+        "comparative_value": 743732155.0,
+        "evidence": {
+          "source_text": "Total 861,489,858 743,732,155",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Interest expended",
+        "schedule_number": "15",
+        "current_value": 380415844.0,
+        "comparative_value": 340695748.0,
+        "evidence": {
+          "source_text": "Interestexpended 15 380,415,844 340,695,748",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Operating expenses",
+        "schedule_number": "16",
+        "current_value": 207510707.0,
+        "comparative_value": 178318808.0,
+        "evidence": {
+          "source_text": "Operating expenses 16 207,510,707 178,318,808",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Provisions and contingencies",
+        "schedule_number": null,
+        "current_value": 120689285.0,
+        "comparative_value": 96544349.0,
+        "evidence": {
+          "source_text": "Provisions and contingencies 120,689,285 96,544,349",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Total Expenditure",
+        "schedule_number": null,
+        "current_value": 708615836.0,
+        "comparative_value": 615558905.0,
+        "evidence": {
+          "source_text": "Total 708,615,836 615,558,905",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Net profit for the year",
+        "schedule_number": null,
+        "current_value": 152874022.0,
+        "comparative_value": 128173250.0,
+        "evidence": {
+          "source_text": "Net profit for the year 152,874,022 128,173,250",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Less: Minority interest",
+        "schedule_number": null,
+        "current_value": 367165.0,
+        "comparative_value": 197212.0,
+        "evidence": {
+          "source_text": "Less: Minority interest 367,165 197,212",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Add:Shareinprofitsofassociates",
+        "schedule_number": null,
+        "current_value": 23393.0,
+        "comparative_value": 37278.0,
+        "evidence": {
+          "source_text": "Add:Shareinprofitsofassociates 23,393 37,278",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Consolidatedprofitfortheyear attributabletotheGroup",
+        "schedule_number": null,
+        "current_value": 152530250.0,
+        "comparative_value": 128013316.0,
+        "evidence": {
+          "source_text": "Consolidatedprofitfortheyear attributabletotheGroup 152,530,250 128,013,316",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Impact on amalgamation [Refer Schedule 18(1)]",
+        "schedule_number": "18(1)",
+        "current_value": null,
+        "comparative_value": 274507.0,
+        "evidence": {
+          "source_text": "Impact on amalgamation [Refer Schedule 18(1)] 274,507",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Balance inProfit and Loss accountbroughtforward",
+        "schedule_number": null,
+        "current_value": 248255886.0,
+        "comparative_value": 195508642.0,
+        "evidence": {
+          "source_text": "Balance inProfit and Loss accountbroughtforward 248,255,886 195,508,642",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Total Appropriation / Available",
+        "schedule_number": null,
+        "current_value": 401060643.0,
+        "comparative_value": 323521958.0,
+        "evidence": {
+          "source_text": "Total 401,060,643 323,521,958",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Transfer toStatutoryReserve",
+        "schedule_number": null,
+        "current_value": 37771634.0,
+        "comparative_value": 31809345.0,
+        "evidence": {
+          "source_text": "Transfer toStatutoryReserve 37,771,634 31,809,345",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Proposed dividend [Refer Schedule 18(3)]",
+        "schedule_number": "18(3)",
+        "current_value": 24017772.0,
+        "comparative_value": null,
+        "evidence": {
+          "source_text": "Proposed dividend [Refer Schedule 18(3)] 24,017,772",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Tax(including cess) on interim / proposed dividend",
+        "schedule_number": null,
+        "current_value": 255959.0,
+        "comparative_value": 5123529.0,
+        "evidence": {
+          "source_text": "Tax(including cess) on interim / proposed dividend 255,959 5,123,529",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Dividend (including tax/ cess thereon)pertaining to previous year paidduringtheyear,netofdividendtaxcredits",
+        "schedule_number": null,
+        "current_value": -16909.0,
+        "comparative_value": -117135.0,
+        "evidence": {
+          "source_text": "(16,909) (117,135)",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "TransfertoGeneralReserve",
+        "schedule_number": null,
+        "current_value": 14549641.0,
+        "comparative_value": 12296213.0,
+        "evidence": {
+          "source_text": "TransfertoGeneralReserve 14,549,641 12,296,213",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "TransfertoCapitalReserve",
+        "schedule_number": null,
+        "current_value": 3134100.0,
+        "comparative_value": 2221532.0,
+        "evidence": {
+          "source_text": "TransfertoCapitalReserve 3,134,100 2,221,532",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Transfer to/(from) Investment Reserve Account",
+        "schedule_number": null,
+        "current_value": 42934.0,
+        "comparative_value": -85184.0,
+        "evidence": {
+          "source_text": "Transfer to/(from) Investment Reserve Account 42,934 (85,184)",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "BalancecarriedovertoBalanceSheet",
+        "schedule_number": null,
+        "current_value": 345323284.0,
+        "comparative_value": 248255886.0,
+        "evidence": {
+          "source_text": "BalancecarriedovertoBalanceSheet 345,323,284 248,255,886",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Basic Earnings Per Share",
+        "schedule_number": null,
+        "current_value": 59.95,
+        "comparative_value": 50.85,
+        "evidence": {
+          "source_text": "Basic 59.95 50.85",
+          "page_number": 1
+        }
+      },
+      {
+        "line_item_name": "Diluted Earnings Per Share",
+        "schedule_number": null,
+        "current_value": 59.16,
+        "comparative_value": 50.24,
+        "evidence": {
+          "source_text": "Diluted 59.16 50.24",
+          "page_number": 1
+        }
+      }
+    ],
+    "additional_fields": {}
   },
-  "current_period": {
-    "period": "31-Mar-17",
-    "interest_earned": 732713529.0,
-    "other_income": 128776329.0,
-    "total_income": 861489858.0,
-    "interest_expended": 380415844.0,
-    "operating_expenses": 207510707.0,
-    "provisions_and_contingencies": 120689285.0,
-    "total_expenditure": 708615836.0,
-    "operating_profit": null,
-    "net_profit_before_minority": 152874022.0,
-    "minority_interest": 367165.0,
-    "share_in_profit_of_associates": 23393.0,
-    "consolidated_net_profit": 152530250.0,
-    "profit_brought_forward": 248255886.0,
-    "total_available_for_appropriation": 401060643.0,
-    "transfer_to_statutory_reserve": 37771634.0,
-    "proposed_dividend": 24017772.0,
-    "transfer_to_general_reserve": 14549641.0
+  "validation_summary": {
+    "checks": [
+      {
+        "name": "total_income_check_current_period",
+        "formula": "interest_earned + other_income",
+        "operands": {
+          "interest_earned": 732713529.0,
+          "other_income": 128776329.0
+        },
+        "calculated_value": 861489858.0,
+        "reported_value": 861489858.0,
+        "variance": 0.0,
+        "status": "PASS",
+        "period": "31-Mar-17"
+      },
+      {
+        "name": "total_expenditure_check_current_period",
+        "formula": "interest_expended + operating_expenses + provisions_and_contingencies",
+        "operands": {
+          "interest_expended": 380415844.0,
+          "operating_expenses": 207510707.0,
+          "provisions": 120689285.0
+        },
+        "calculated_value": 708615836.0,
+        "reported_value": 708615836.0,
+        "variance": 0.0,
+        "status": "PASS",
+        "period": "31-Mar-17"
+      },
+      {
+        "name": "net_profit_before_minority_check_current_period",
+        "formula": "total_income - total_expenditure",
+        "operands": {
+          "total_income": 861489858.0,
+          "total_expenditure": 708615836.0
+        },
+        "calculated_value": 152874022.0,
+        "reported_value": 152874022.0,
+        "variance": 0.0,
+        "status": "PASS",
+        "period": "31-Mar-17"
+      },
+      {
+        "name": "consolidated_profit_check_current_period",
+        "formula": "net_profit_before_minority - minority_interest + share_in_profit_of_associates",
+        "operands": {
+          "net_profit_before_minority": 152874022.0,
+          "minority_interest": 367165.0,
+          "associates": 23393.0
+        },
+        "calculated_value": 152530250.0,
+        "reported_value": 152530250.0,
+        "variance": 0.0,
+        "status": "PASS",
+        "period": "31-Mar-17"
+      },
+      {
+        "name": "appropriation_total_check_current_period",
+        "formula": "current_profit + profit_brought_forward",
+        "operands": {
+          "current_profit": 152530250.0,
+          "profit_brought_forward": 248255886.0
+        },
+        "calculated_value": 400786136.0,
+        "reported_value": 401060643.0,
+        "variance": 274507.0,
+        "status": "FAIL",
+        "period": "31-Mar-17"
+      },
+      {
+        "name": "total_income_check_comparative_period",
+        "formula": "interest_earned + other_income",
+        "operands": {
+          "interest_earned": 631615614.0,
+          "other_income": 112116541.0
+        },
+        "calculated_value": 743732155.0,
+        "reported_value": 743732155.0,
+        "variance": 0.0,
+        "status": "PASS",
+        "period": "31-Mar-16"
+      },
+      {
+        "name": "total_expenditure_check_comparative_period",
+        "formula": "interest_expended + operating_expenses + provisions_and_contingencies",
+        "operands": {
+          "interest_expended": 340695748.0,
+          "operating_expenses": 178318808.0,
+          "provisions": 96544349.0
+        },
+        "calculated_value": 615558905.0,
+        "reported_value": 615558905.0,
+        "variance": 0.0,
+        "status": "PASS",
+        "period": "31-Mar-16"
+      },
+      {
+        "name": "net_profit_before_minority_check_comparative_period",
+        "formula": "total_income - total_expenditure",
+        "operands": {
+          "total_income": 743732155.0,
+          "total_expenditure": 615558905.0
+        },
+        "calculated_value": 128173250.0,
+        "reported_value": 128173250.0,
+        "variance": 0.0,
+        "status": "PASS",
+        "period": "31-Mar-16"
+      },
+      {
+        "name": "consolidated_profit_check_comparative_period",
+        "formula": "net_profit_before_minority - minority_interest + share_in_profit_of_associates",
+        "operands": {
+          "net_profit_before_minority": 128173250.0,
+          "minority_interest": 197212.0,
+          "associates": 37278.0
+        },
+        "calculated_value": 128013316.0,
+        "reported_value": 128013316.0,
+        "variance": 0.0,
+        "status": "PASS",
+        "period": "31-Mar-16"
+      },
+      {
+        "name": "appropriation_total_check_comparative_period",
+        "formula": "current_profit + profit_brought_forward",
+        "operands": {
+          "current_profit": 128013316.0,
+          "profit_brought_forward": 195508642.0
+        },
+        "calculated_value": 323521958.0,
+        "reported_value": 323521958.0,
+        "variance": 0.0,
+        "status": "PASS",
+        "period": "31-Mar-16"
+      }
+    ],
+    "overall_status": "FAIL",
+    "issues": [
+      "Check 'appropriation_total_check_current_period' failed: calculated 400786136.0 vs reported 401060643.0 (variance 274507.0)"
+    ]
   },
-  "comparative_period": {
-    "period": "31-Mar-16",
-    "interest_earned": 631615614.0,
-    "other_income": 112116541.0,
-    "total_income": 743732155.0,
-    "interest_expended": 340695748.0,
-    "operating_expenses": 178318808.0,
-    "provisions_and_contingencies": 96544349.0,
-    "total_expenditure": 615558905.0,
-    "operating_profit": null,
-    "net_profit_before_minority": 128173250.0,
-    "minority_interest": 197212.0,
-    "share_in_profit_of_associates": 37278.0,
-    "consolidated_net_profit": 128013316.0,
-    "profit_brought_forward": 195508642.0,
-    "total_available_for_appropriation": 323521958.0,
-    "transfer_to_statutory_reserve": 31809345.0,
-    "proposed_dividend": null,
-    "transfer_to_general_reserve": 12296213.0
+  "processing_metadata": {
+    "processing_time_seconds": 48.989,
+    "ocr_used": true,
+    "ocr_methods": [
+      "ocr"
+    ],
+    "llm_provider": "gemini",
+    "llm_model": "gemini-3.5-flash-lite"
   },
-  "line_items": [
-    {
-      "line_item_name": "Interest earned",
-      "schedule_number": "13",
-      "current_value": 732713529.0,
-      "comparative_value": 631615614.0,
-      "evidence": {
-        "source_text": "Interest earned 13 732,713,529 631,615,614",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Other income",
-      "schedule_number": "14",
-      "current_value": 128776329.0,
-      "comparative_value": 112116541.0,
-      "evidence": {
-        "source_text": "Other income 14 128,776,329 112,116,541",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Total Income",
-      "schedule_number": null,
-      "current_value": 861489858.0,
-      "comparative_value": 743732155.0,
-      "evidence": {
-        "source_text": "Total 861,489,858 743,732,155",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Interest expended",
-      "schedule_number": "15",
-      "current_value": 380415844.0,
-      "comparative_value": 340695748.0,
-      "evidence": {
-        "source_text": "Interestexpended 15 380,415,844 340,695,748",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Operating expenses",
-      "schedule_number": "16",
-      "current_value": 207510707.0,
-      "comparative_value": 178318808.0,
-      "evidence": {
-        "source_text": "Operating expenses 16 207,510,707 178,318,808",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Provisions and contingencies",
-      "schedule_number": null,
-      "current_value": 120689285.0,
-      "comparative_value": 96544349.0,
-      "evidence": {
-        "source_text": "Provisions and contingencies 120,689,285 96,544,349",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Total Expenditure",
-      "schedule_number": null,
-      "current_value": 708615836.0,
-      "comparative_value": 615558905.0,
-      "evidence": {
-        "source_text": "Total 708,615,836 615,558,905",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Net profit for the year",
-      "schedule_number": null,
-      "current_value": 152874022.0,
-      "comparative_value": 128173250.0,
-      "evidence": {
-        "source_text": "Net profit for the year 152,874,022 128,173,250",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Less: Minority interest",
-      "schedule_number": null,
-      "current_value": 367165.0,
-      "comparative_value": 197212.0,
-      "evidence": {
-        "source_text": "Less: Minority interest 367,165 197,212",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Add:Shareinprofitsofassociates",
-      "schedule_number": null,
-      "current_value": 23393.0,
-      "comparative_value": 37278.0,
-      "evidence": {
-        "source_text": "Add:Shareinprofitsofassociates 23,393 37,278",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Consolidatedprofitfortheyear attributabletotheGroup",
-      "schedule_number": null,
-      "current_value": 152530250.0,
-      "comparative_value": 128013316.0,
-      "evidence": {
-        "source_text": "Consolidatedprofitfortheyear attributabletotheGroup 152,530,250 128,013,316",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Impact on amalgamation",
-      "schedule_number": "18(1)",
-      "current_value": 274507.0,
-      "comparative_value": null,
-      "evidence": {
-        "source_text": "Impact on amalgamation [Refer Schedule 18(1)] 274,507",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Balance inProfit and Loss accountbroughtforward",
-      "schedule_number": null,
-      "current_value": 248255886.0,
-      "comparative_value": 195508642.0,
-      "evidence": {
-        "source_text": "Balance inProfit and Loss accountbroughtforward 248,255,886 195,508,642",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Total Profit Available for Appropriation",
-      "schedule_number": null,
-      "current_value": 401060643.0,
-      "comparative_value": 323521958.0,
-      "evidence": {
-        "source_text": "Total 401,060,643 323,521,958",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Transfer toStatutoryReserve",
-      "schedule_number": null,
-      "current_value": 37771634.0,
-      "comparative_value": 31809345.0,
-      "evidence": {
-        "source_text": "Transfer toStatutoryReserve 37,771,634 31,809,345",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Proposed dividend",
-      "schedule_number": "18(3)",
-      "current_value": null,
-      "comparative_value": null,
-      "evidence": {
-        "source_text": "Proposed dividend [Refer Schedule 18(3)]",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Tax(including cess) on interim / proposed dividend",
-      "schedule_number": null,
-      "current_value": 255959.0,
-      "comparative_value": 5123529.0,
-      "evidence": {
-        "source_text": "Tax(including cess) on interim / proposed dividend 255,959 5,123,529",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Dividend (including tax/ cess thereon)pertaining to previous year paidduringtheyear,netofdividendtaxcredits",
-      "schedule_number": null,
-      "current_value": -16909.0,
-      "comparative_value": -117135.0,
-      "evidence": {
-        "source_text": "Dividend (including tax/ cess thereon)pertaining to previous year\n(16,909)\n(117,135)\npaidduringtheyear,netofdividendtaxcredits",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "TransfertoGeneralReserve",
-      "schedule_number": null,
-      "current_value": 14549641.0,
-      "comparative_value": 12296213.0,
-      "evidence": {
-        "source_text": "TransfertoGeneralReserve 14,549,641 12,296,213",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "TransfertoCapitalReserve",
-      "schedule_number": null,
-      "current_value": 3134100.0,
-      "comparative_value": 2221532.0,
-      "evidence": {
-        "source_text": "TransfertoCapitalReserve 3,134,100 2,221,532",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Transfer to/(from) Investment Reserve Account",
-      "schedule_number": null,
-      "current_value": 42934.0,
-      "comparative_value": -85184.0,
-      "evidence": {
-        "source_text": "Transfer to/(from) Investment Reserve Account 42,934 (85,184)",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "BalancecarriedovertoBalanceSheet",
-      "schedule_number": null,
-      "current_value": 345323284.0,
-      "comparative_value": 248255886.0,
-      "evidence": {
-        "source_text": "BalancecarriedovertoBalanceSheet 345,323,284 248,255,886",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Total Appropriations",
-      "schedule_number": null,
-      "current_value": 401060643.0,
-      "comparative_value": 323521958.0,
-      "evidence": {
-        "source_text": "Total 401,060,643 323,521,958",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Basic Earnings Per Equity Share",
-      "schedule_number": null,
-      "current_value": 59.95,
-      "comparative_value": 50.85,
-      "evidence": {
-        "source_text": "Basic 59.95 50.85",
-        "page_number": 1
-      }
-    },
-    {
-      "line_item_name": "Diluted Earnings Per Equity Share",
-      "schedule_number": null,
-      "current_value": 59.16,
-      "comparative_value": 50.24,
-      "evidence": {
-        "source_text": "Diluted 59.16 50.24",
-        "page_number": 1
-      }
-    }
-  ],
-  "additional_fields": {}
+  "created_at": "2026-09-11T13:17:56.958538",
+  "updated_at": "2026-09-11T13:17:56.958538"
 }
