@@ -15,6 +15,9 @@ logger = get_logger(__name__)
 settings = get_settings()
 
 
+from app.core.database import init_db
+
+
 @asynccontextmanager
 async def lifespan(_app: FastAPI):
     logger.info(
@@ -24,6 +27,7 @@ async def lifespan(_app: FastAPI):
         settings.llm_provider,
         settings.active_llm_model(),
     )
+    init_db()
     yield
     logger.info("Shutting down %s", settings.app_name)
 
