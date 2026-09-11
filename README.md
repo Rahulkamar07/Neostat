@@ -270,21 +270,32 @@ Pre-extracted live outputs for all 4 document categories from the benchmark data
 
 ---
 
-## 🚢 Production Deployment
+## 🚢 Production Deployment (Render)
 
-### Deploying to Render / Railway / Cloud Run
-1. **Dockerfile**: A standard production `Dockerfile` should install `tesseract-ocr` via `apt-get`:
-   ```dockerfile
-   FROM python:3.11-slim
-   RUN apt-get update && apt-get install -y --no-install-recommends \
-       tesseract-ocr \
-       libtesseract-dev \
-       && rm -rf /var/lib/apt/lists/*
-   WORKDIR /app
-   COPY backend/requirements.txt .
-   RUN pip install --no-cache-dir -r requirements.txt
-   COPY . .
-   WORKDIR /app/backend
-   CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
-   ```
-2. **Environment Variables**: Configure `GEMINI_API_KEY`, `LLM_PROVIDER=gemini`, and `DATABASE_URL` in the cloud provider's dashboard settings.
+This project includes a production-ready [`Dockerfile`](Dockerfile) at the project root.
+
+### Quick Deploy to Render (Free Tier)
+
+1. **Create a New Web Service** on [Render](https://render.com/) and connect your GitHub repository.
+2. **Build Settings**:
+   - **Environment**: `Docker`
+   - **Dockerfile Path**: `./Dockerfile`
+   - Render will auto-detect the Dockerfile.
+3. **Set Environment Variables** in Render's dashboard (Settings → Environment):
+
+   | Variable | Value | Required |
+   |---|---|---|
+   | `GEMINI_API_KEY` | Your Google Gemini API key | ✅ Yes |
+   | `LLM_PROVIDER` | `gemini` | ✅ Yes |
+   | `GEMINI_MODEL` | `gemini-3.5-flash-lite` | Optional (default) |
+   | `APP_ENV` | `production` | Optional (default) |
+   | `DATABASE_URL` | `sqlite:///./data/app.db` | Optional (default) |
+   | `LOG_LEVEL` | `INFO` | Optional (default) |
+
+   > **Note**: `PORT` is automatically set by Render — do not set it manually. `TESSERACT_CMD` should be left empty (Tesseract is installed on PATH inside the container).
+
+4. **Deploy** — Render will build the Docker image and start the service. The URL will be something like `https://neostat-xxxx.onrender.com`.
+
+### Known Limitation (Free Tier)
+
+Render's free tier uses **ephemeral disk storage**. The SQLite database (`data/app.db`) will be reset on each redeploy or after periods of inactivity. This is an acceptable limitation for this assessment — for production use, migrate to PostgreSQL via Render's managed database service.

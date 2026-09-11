@@ -1,0 +1,26 @@
+.git
+.env
+.env.local
+.env.*.local
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.db
+*.sqlite
+*.sqlite3
+logs/
+uploads/
+data/
+.cursor/
+.agents/
+.vscode/
+.idea/
+New Dataset 1/
+New Dataset 1.zip
+*.docx
+Thumbs.db
+.DS_Store
